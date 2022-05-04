@@ -1,0 +1,282 @@
+body {
+    font-family: "Lato";
+    background-color: #2980b9;
+    padding-top: 120px;
+}
+
+.fork {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.content {
+    h1,h2 {
+        font-family: "Source Sans Pro",sans-serif;
+        color: #ecf0f1;
+        padding: 0px;
+        margin: 0px;
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: 76px;
+    }
+    h2 {
+        font-weight: lighter;
+        font-size: 28px;
+    }
+    p {
+        color: #ecf0f1;
+        font-family: "Lato";
+        line-height: 28px;
+        font-size: 14px;
+        padding-top: 50px;
+    }
+    p.credit {
+        padding-top: 30px;
+        font-size: 11px;
+        a {
+            color: #ecf0f1;
+        }
+    }
+    .text {
+        margin-left: 130px;
+        width: 700px;
+        height: 430px;
+        .text1 {
+            display: flex;
+            width: 100%;
+        }
+        .text2 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.nav {
+    ul.nav-menu {
+        padding: 0px;
+        list-style-type: none;
+        width: 510px;
+        margin: 60px auto;
+        li {
+            display: inline;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    color: #2c3e50;
+                }
+            }
+            a.active {
+                color: #2c3e50;
+            }
+        }
+    }
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+    li {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .animation1, .animation2 {
+        top: 0;
+        height: 300px;
+        width: 400px;
+        .bg-blur {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            h3 {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .animation1 {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+        &:hover{
+            opacity: 1;
+        }
+        .bg-blur {
+            height: 100%;
+            .text {
+                position: absolute;
+                top: 32.5%;
+                text-align: center;
+                h3, p {
+                    font-family: initial;
+                    color: white;
+                }
+                h3 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+    .animation2 {
+        position: absolute;
+        transition: all 0.5s;
+        &:hover{
+            .bg-blur {
+                bottom: 0;
+            }
+        }
+        .bg-blur {
+            height: 100px;
+            bottom: -100px;
+            transition: all 0.15s;
+            .text {
+                text-align: center;
+                h3, p {
+                    font-family: initial;
+                    color: white;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.item-list2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+    li {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        width: 400px;
+        overflow: hidden;
+        &:hover{
+            img {
+                top: -40px;
+            }
+        }
+        img {
+            position: absolute;
+            top: 0;
+            transition: all 0.15s;
+        }
+    }
+
+    .animation {
+        position: absolute;
+        top: 0;
+        height: 300px;
+        width: 400px;
+        transition: all 0.5s;
+        &:hover{
+            .bg-blur {
+                bottom: 0;
+            }
+        }
+        .bg-blur {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            bottom: -100px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(142, 68, 173,0.95);
+            transition: all 0.15s;
+            .text {
+                text-align: center;
+                h3, p {
+                    font-family: initial;
+                    color: white;
+                }
+                h3 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.item-list3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+    li {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        width: 400px;
+        overflow: hidden;
+        &:hover{
+            img {
+                transform: scale(1.15);
+            }
+        }
+        img {
+            transition: all 0.5s;
+        }
+    }
+
+    .animation {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+        top: 0;
+        height: 300px;
+        width: 400px;
+        &:hover{
+            opacity: 1;
+        }
+        .bg-blur {
+            position: absolute;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            .text {
+                position: absolute;
+                top: 32.5%;
+                text-align: center;
+                h3, p {
+                    font-family: initial;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+                h3 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
