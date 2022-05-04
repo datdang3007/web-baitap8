@@ -19,25 +19,26 @@ body {
 }
 
 .content h1 {
-  font-size: 76px;
+  font-weight: 900;
+  font-size: 64px;
 }
 
 .content h2 {
   font-weight: lighter;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .content p {
   color: #ecf0f1;
   font-family: "Lato";
   line-height: 28px;
-  font-size: 14px;
-  padding-top: 50px;
+  font-size: 15px;
+  padding-top: 55px;
 }
 
 .content p.credit {
-  padding-top: 30px;
-  font-size: 11px;
+  padding-top: 35px;
+  font-size: 12px;
 }
 
 .content p.credit a {
@@ -47,7 +48,7 @@ body {
 .content .text {
   margin-left: 130px;
   width: 700px;
-  height: 430px;
+  height: 422.5px;
 }
 
 .content .text .text1 {
